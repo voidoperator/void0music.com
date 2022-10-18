@@ -75,7 +75,7 @@ ppButton.addEventListener("click", () => {
   if (playerState === 1) {
     player.pauseVideo();
   }
-  if (playerState === 2) {
+  if (playerState !== 1) {
     player.playVideo();
   }
 });
