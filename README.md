@@ -5,7 +5,7 @@
 
 - 🔭 I’m currently working on [https://void0music.com](https://github.com/voidoperator/void0music.com)
 
-- 🌱 I’m currently learning **React, Redux, TypeScripts, React Native, Linear & Complex Data Structures, and Search & Graph Search Algorithms.**
+- 🌱 I’m currently learning **React, Redux, TypeScripts, React Native.**
 
 - 👨‍💻 All of my projects are available at [https://github.com/voidoperator/](https://github.com/voidoperator/)
 
