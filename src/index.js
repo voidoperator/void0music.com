@@ -2,7 +2,7 @@
 
 "use strict";
 
-const navBar = document.getElementById("navbar");
+const navBar = document.getElementById("navbar-background");
 
 window.onscroll = () => {
   if (

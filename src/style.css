@@ -59,23 +59,26 @@ header {
   position: fixed;
   display: flex;
   width: 100%;
-  transition: all 1s ease-in;
-}
-
-.pop-trans {
-  transition: all 1s ease;
 }
 
 .hidden-menu {
   right: -20%;
+  transition: all 1s ease;
 }
 
 .visible-menu {
   right: 0%;
+  transition: all 1s ease;
 }
 
-.side-menu-toggle {
-  right: 20%;
+.side-menu-visible {
+  right: 20% !important;
+  transition: all 1s ease !important;
+}
+
+.side-menu-hidden {
+  right: 0% !important;
+  transition: all 1s ease !important;
 }
 
 .side-menu {
@@ -89,11 +92,45 @@ header {
 }
 
 .nav-top {
-  background-color: transparent;
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  height: 15vh;
+  width: 100vw;
+  z-index: -50;
+  background: rgb(245, 245, 245);
+  background: -moz-linear-gradient(
+    0deg,
+    rgba(245, 245, 245, 0) 0%,
+    rgba(0, 0, 0, 0.5998774509803921) 50%,
+    rgba(0, 0, 0, 0.7959558823529411) 100%
+  );
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(245, 245, 245, 0) 0%,
+    rgba(0, 0, 0, 0.5998774509803921) 50%,
+    rgba(0, 0, 0, 0.7959558823529411) 100%
+  );
+  background: linear-gradient(
+    0deg,
+    rgba(245, 245, 245, 0) 0%,
+    rgba(0, 0, 0, 0.5998774509803921) 50%,
+    rgba(0, 0, 0, 0.7959558823529411) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f5f5f5",endColorstr="#000000",GradientType=1);
+  transition: all 1s ease;
 }
 
 .nav-scroll {
-  width: 100%;
+  position: absolute;
+  opacity: 1;
+  top: 0;
+  left: 0;
+  padding-right: 100%;
+  height: 15vh;
+  width: 100vw;
+  z-index: -50;
   background: rgb(245, 245, 245);
   background: -moz-linear-gradient(
     0deg,
@@ -509,7 +546,7 @@ main {
   -webkit-transform: rotate(45deg);
 }
 
-#scroll-to-content {
+#scroll-arrow {
   display: flex;
   position: absolute;
   left: 50%;
@@ -532,6 +569,11 @@ main {
   left: 92%;
   bottom: 35px;
   z-index: 1;
+}
+
+.hidden {
+  opacity: 0;
+  transition: all 0.5s ease;
 }
 
 .vid-control-button {
