@@ -1,4 +1,5 @@
 // Gradient NavBar on scroll
+
 "use strict";
 
 const navBar = document.getElementById("navbar");
@@ -16,11 +17,7 @@ window.onscroll = () => {
   }
 };
 
-// Slide site when hamburger clicked
-const hamburger = document.getElementsByClassName("checkbox");
-
 // Autoplay iFrame Hero Banner
-// video id = Kona1lUcxes
 
 const tag = document.createElement("script");
 

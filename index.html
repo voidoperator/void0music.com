@@ -9,9 +9,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./src/style.css" />
     <script src="./src/index.js" defer></script>
+    <script src="./src/side-menu.js" defer></script>
     <title>void(0) &#8211; 𝐂𝐇𝐀𝐏𝐓𝐄𝐑 𝟐: 𝔻𝕌𝔸𝕃𝕀𝕋𝕐</title>
   </head>
-  <header class="navbar" id="navbar">
+  <header id="header" class="">
     <nav>
       <div class="logo-container">
         <a href="https://void0music.com/linktree" target="_blank">
@@ -68,19 +69,35 @@
         </div>
         <div class="side-menu">
           <div class="nav-container">
-            <input class="checkbox" type="checkbox" name="" id="" />
+            <input class="checkbox" type="checkbox" onclick="popMenu()" />
             <div class="sidebar-lines">
               <span class="line line1"></span>
               <span class="line line2"></span>
               <span class="line line3"></span>
             </div>
           </div>
-          <div class="menu-items"></div>
         </div>
       </div>
     </nav>
   </header>
-  <body>
+  <body id="body" class="">
+    <div id="side-menu" class="side-menu-off" style="right: -20%">
+      <ul>
+        CONTENT HERE
+      </ul>
+      <ul>
+        CONTENT HERE
+      </ul>
+      <ul>
+        CONTENT HERE
+      </ul>
+      <ul>
+        CONTENT HERE
+      </ul>
+      <ul>
+        CONTENT HERE
+      </ul>
+    </div>
     <div class="vid-wrapper">
       <div class="hero-banner-vid" id="player"></div>
     </div>
@@ -112,12 +129,14 @@
         <div class="pointer"></div>
       </div>
     </div>
-    <div class="slider-wrap">
-      <i id="scroll-to-content" class="arrow down"></i>
-      <div id="scroll-to-content" title="Scroll to Content"></div>
-    </div>
+    <div class="slider-wrap"></div>
+    <a href="#main">
+      <i id="scroll-to-content" class="arrow down">
+        <div class="scroll-to-content" title="scroll to content"></div>
+      </i>
+    </a>
     <main>
-      <h1>the new era of artificial intelligence</h1>
+      <h1 id="main">the new era of artificial intelligence</h1>
       <h2>proprietary operating system developed by darkmattr tech.</h2>
       <p>
         01101000 01100101 01101100 01101100 01101111 00101100 00100000 01101101

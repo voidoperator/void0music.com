@@ -18,6 +18,20 @@ html {
   box-sizing: content-box;
 }
 
+.side-menu-toggle {
+  margin-right: 20%;
+}
+
+#side-menu {
+  position: fixed;
+  height: 100vh;
+  width: 20%;
+  overflow: hidden;
+  opacity: 70%;
+  background-color: black;
+  z-index: 50;
+}
+
 /* Hero Banner Video */
 
 .vid-wrapper {
@@ -358,9 +372,6 @@ nav {
 /* Scrollbar Style */
 
 ::-webkit-scrollbar {
-  -webkit-appearance: none;
-}
-::-webkit-scrollbar {
   width: 10px;
 }
 
@@ -489,7 +500,8 @@ main {
   position: absolute;
   left: 50%;
   bottom: 75px;
-  z-index: -1;
+  z-index: 1000;
+  cursor: pointer;
   height: 50px;
   width: 50px;
   overflow: hidden;
@@ -501,9 +513,9 @@ main {
 }
 
 .controls {
-  display: block;
+  display: flex;
   position: absolute;
-  left: 94%;
+  left: 92%;
   bottom: 35px;
   z-index: 1;
 }
@@ -512,18 +524,6 @@ main {
   align-items: center;
   display: flex;
   justify-content: center;
-}
-.background {
-  background: transparent;
-  border-radius: 50%;
-  cursor: pointer;
-  height: 100px;
-  position: absolute;
-  width: 100px;
-}
-
-.vid-control-button:active .background {
-  background: transparent;
 }
 
 .icon {
