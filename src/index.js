@@ -12,7 +12,7 @@ window.onscroll = () => {
     navBar.classList.add("nav-scroll");
     navBar.classList.remove("nav-top");
   } else {
-    navBar.classList.add("nav-transparent");
+    navBar.classList.add("nav-top");
     navBar.classList.remove("nav-scroll");
   }
 };
