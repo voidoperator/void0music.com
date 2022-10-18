@@ -11,7 +11,7 @@
 
 - 📫 How to reach me **contact@void0music.com**
 
-- ⚡ Fun fact **I am a professional touring electronic music producer & DJ. Find my music at void0music.com/linktree**
+- ⚡ Fun fact **I am a professional touring electronic music producer & DJ. Find my music at <a href="https://void0music.com/linktree">void0music.com/linktree</a>**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
