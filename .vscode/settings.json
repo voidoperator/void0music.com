@@ -1,0 +1,8 @@
+{
+  "liveServer.settings.https": {
+    "enable": true, //set it true to enable the feature.
+    "cert": "C:\\Users\\voidzero\\.vscode\\certificate.pem", //full path of the certificate
+    "key": "C:\\Users\\voidzero\\.vscode\\key.pem", //full path of the private key
+    "passphrase": "123456"
+  }
+}
