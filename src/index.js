@@ -28,9 +28,9 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 let player;
 function onYouTubeIframeAPIReady() {
   player = new YT.Player("player", {
-    videoId: "Kona1lUcxes",
+    videoId: "sRlyruPl64Q",
     playerVars: {
-      playlist: "Kona1lUcxes",
+      playlist: "sRlyruPl64Q",
       loop: 1,
       autoplay: 1,
       controls: 0,

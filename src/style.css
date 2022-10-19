@@ -3,7 +3,7 @@
 /* Fonts */
 @font-face {
   font-family: "Share-Tech-Mono";
-  src: url("./fonts/Share-Tech-Mono.otf");
+  src: url("./font/Share-Tech-Mono.otf");
 }
 
 /* Universal */
@@ -64,21 +64,25 @@ header {
 .hidden-menu {
   right: -20%;
   transition: all 1s ease;
+  -webkit-transition: all 1s ease;
 }
 
 .visible-menu {
   right: 0%;
   transition: all 1s ease;
+  -webkit-transition: all 1s ease;
 }
 
 .side-menu-visible {
   right: 20% !important;
   transition: all 1s ease !important;
+  -webkit-transition: all 1s ease !important;
 }
 
 .side-menu-hidden {
   right: 0% !important;
   transition: all 1s ease !important;
+  -webkit-transition: all 1s ease !important;
 }
 
 .side-menu {
@@ -120,6 +124,7 @@ header {
   );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f5f5f5",endColorstr="#000000",GradientType=1);
   transition: all 1s ease;
+  -webkit-transition: all 1s ease;
 }
 
 .nav-scroll {
@@ -152,6 +157,7 @@ header {
   );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f5f5f5",endColorstr="#000000",GradientType=1);
   transition: all 1s ease;
+  -webkit-transition: all 1s ease;
 }
 
 nav {
@@ -187,11 +193,12 @@ nav {
   opacity: 50%;
   transform: scale(1.02);
   transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
 }
 
 .nav-social-icons img {
   background-size: 100% 100%;
-  height: 20px;
+  height: 23px;
   margin: 20px 15px auto 15px;
   transform: scale(1);
   opacity: 100%;
@@ -203,6 +210,7 @@ nav {
   opacity: 50%;
   transform: scale(1.15);
   transition: all 0.5s ease 100ms;
+  -webkit-transition: all 0.5s ease 100ms;
 }
 
 #soundcloud-icon img {
@@ -216,6 +224,7 @@ nav {
   filter: brightness(0) saturate(100%) invert(56%) sepia(14%) saturate(4811%)
     hue-rotate(359deg) brightness(101%) contrast(104%);
   transition: all 0.25s ease 50ms;
+  -webkit-transition: all 0.25s ease 50ms;
 }
 
 #spotify-icon img {
@@ -229,6 +238,7 @@ nav {
   filter: brightness(0) saturate(100%) invert(59%) sepia(13%) saturate(5553%)
     hue-rotate(97deg) brightness(95%) contrast(77%);
   transition: all 0.25s ease 50ms;
+  -webkit-transition: all 0.25s ease 50ms;
 }
 
 #apple-music-icon img {
@@ -255,6 +265,7 @@ nav {
   filter: brightness(0) saturate(100%) invert(50%) sepia(98%) saturate(1788%)
     hue-rotate(175deg) brightness(98%) contrast(94%);
   transition: all 0.25s ease 50ms;
+  -webkit-transition: all 0.25s ease 50ms;
 }
 
 #instagram-icon img {
@@ -268,6 +279,7 @@ nav {
   filter: brightness(0) saturate(100%) invert(39%) sepia(73%) saturate(602%)
     hue-rotate(295deg) brightness(87%) contrast(91%);
   transition: all 0.25s ease 50ms;
+  -webkit-transition: all 0.25s ease 50ms;
 }
 
 #facebook-icon img {
@@ -281,6 +293,7 @@ nav {
   filter: brightness(0) saturate(100%) invert(28%) sepia(99%) saturate(414%)
     hue-rotate(183deg) brightness(94%) contrast(85%);
   transition: all 0.25s ease 50ms;
+  -webkit-transition: all 0.25s ease 50ms;
 }
 
 #youtube-icon img {
@@ -294,6 +307,7 @@ nav {
   filter: brightness(0) saturate(100%) invert(15%) sepia(96%) saturate(7489%)
     hue-rotate(0deg) brightness(107%) contrast(111%);
   transition: all 0.25s ease 50ms;
+  -webkit-transition: all 0.25s ease 50ms;
 }
 
 /* Sidebar */
@@ -355,6 +369,7 @@ nav {
 .nav-container input[type="checkbox"]:not(:checked) ~ .sidebar-lines .line3 {
   opacity: 100%;
   transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
 }
 
 .nav-container:hover
@@ -368,6 +383,7 @@ nav {
   opacity: 70%;
   width: 100%;
   transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
 }
 
 .nav-container:hover
@@ -377,29 +393,35 @@ nav {
   opacity: 70%;
   width: 125%;
   transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
 }
 
 .nav-container .sidebar-lines .line2 {
   transition: transform 0.2s ease-in-out;
+  -webkit-transition: transform 0.2s ease-in-out;
 }
 
 .nav-container .sidebar-lines .line3 {
   transform-origin: 0% 100%;
   transition: transform 0.4s ease-in-out;
+  -webkit-transition: transform 0.4s ease-in-out;
 }
 
 .nav-container .sidebar-lines .line1 {
   transform-origin: 0% 0%;
   transition: transform 0.4s ease-in-out;
+  -webkit-transition: transform 0.4s ease-in-out;
 }
 
 .nav-container .sidebar-lines .line2 {
   transition: transform 0.2s ease-in-out;
+  -webkit-transition: transform 0.2s ease-in-out;
 }
 
 .nav-container .sidebar-lines .line3 {
   transform-origin: 0% 100%;
   transition: transform 0.4s ease-in-out;
+  -webkit-transition: transform 0.4s ease-in-out;
 }
 
 /* Sidebar Animation */
@@ -574,6 +596,7 @@ main {
 .hidden {
   opacity: 0;
   transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
 }
 
 .vid-control-button {
@@ -586,6 +609,7 @@ main {
   height: 100px;
   transform: rotate(-120deg);
   transition: transform 500ms;
+  -webkit-transition: transform 500ms;
   width: 100px;
 }
 
@@ -664,6 +688,7 @@ main {
     43.773% 56.25486%
   );
   transition: clip-path 500ms;
+  -webkit-transition: clip-path 500ms;
 }
 
 .right {
@@ -734,6 +759,7 @@ main {
     43.773% 43.428%
   );
   transition: clip-path 500ms;
+  -webkit-transition: clip-path 500ms;
 }
 
 .pointer {
@@ -928,4 +954,22 @@ p {
   color: #101010;
   transition: all 0.4s 50ms;
   -webkit-transition: all 0.4s ease 50ms;
+}
+
+button a {
+  color: #fafafa;
+  text-decoration: none;
+  transition: all 0.4s 50ms;
+  -webkit-transition: all 0.4s ease 50ms;
+}
+
+button a:hover {
+  color: #101010;
+  text-decoration: none;
+  transition: all 0.4s 50ms;
+  -webkit-transition: all 0.4s ease 50ms;
+}
+
+.elfsight-app-cd07d83f-2780-4365-9b9e-652d1cbf35ec {
+  width: 250% !important;
 }
