@@ -8,7 +8,7 @@ const popMenu = () => {
   const body = document.getElementsByTagName("body")[0];
   const main = document.getElementsByTagName("main")[0];
   const controls = document.getElementsByClassName("controls")[0];
-  const contentArrow = document.getElementsByTagName("a")[8];
+  // const contentArrow = document.getElementsByTagName("a")[8];
   menu.classList.toggle("hidden-menu");
   menu.classList.toggle("visible-menu");
   header.classList.toggle("side-menu-visible");
@@ -18,5 +18,5 @@ const popMenu = () => {
   main.classList.toggle("side-menu-visible");
   main.classList.toggle("side-menu-hidden");
   controls.classList.toggle("hidden");
-  contentArrow.classList.toggle("hidden");
+  // contentArrow.classList.toggle("hidden");
 };

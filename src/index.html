@@ -4,12 +4,14 @@
   <!-- BEGONE HUMAN -->
   <!-- INITIALIZING SELF-DESTRUCT PROTOCOL -->
   <head>
+    <!-- <base href="" /> -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./src/style.css" />
-    <script src="./src/index.js" defer></script>
-    <script src="./src/side-menu.js" defer></script>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <script src="./index.js" defer></script>
+    <script src="./app/side-menu.js" defer></script>
+    <script src="./app/ig-widget.js" type="module" defer></script>
     <title>void(0) &#8211; 𝐂𝐇𝐀𝐏𝐓𝐄𝐑 𝟐: 𝔻𝕌𝔸𝕃𝕀𝕋𝕐</title>
   </head>
   <body class="side-menu-hidden">
@@ -18,7 +20,7 @@
         <div class="logo-container">
           <a href="https://void0music.com/linktree" target="_blank">
             <img
-              src="./src/img/void-zero-logo.png"
+              src="./assets/img/void-zero-logo.png"
               alt="void(0)"
               id="header-logo"
             />
@@ -28,7 +30,7 @@
           <div id="soundcloud-icon">
             <a href="https://soundcloud.com/void0music" target="_blank">
               <img
-                src="./src/img/social icons/soundcloud-150px.png"
+                src="./assets/img/social icons/soundcloud-150px.png"
                 alt="SoundCloud"
               />
             </a>
@@ -39,7 +41,7 @@
               target="_blank"
             >
               <img
-                src="./src/img/social icons/spotify-150px.png"
+                src="./assets/img/social icons/spotify-150px.png"
                 alt="Spotify"
               />
             </a>
@@ -50,7 +52,7 @@
               target="_blank"
             >
               <img
-                src="./src/img/social icons/apple-music-150px.png"
+                src="./assets/img/social icons/apple-music-150px.png"
                 alt="Apple Music"
               />
             </a>
@@ -58,7 +60,7 @@
           <div id="twitter-icon">
             <a href="https://twitter.com/void0music" target="_blank">
               <img
-                src="./src/img/social icons/twitter-150px.png"
+                src="./assets/img/social icons/twitter-150px.png"
                 alt="Twitter"
               />
             </a>
@@ -66,7 +68,7 @@
           <div id="instagram-icon">
             <a href="https://instagram.com/void0music" target="_blank">
               <img
-                src="./src/img/social icons/instagram-150px.png"
+                src="./assets/img/social icons/instagram-150px.png"
                 alt="Instagram"
               />
             </a>
@@ -74,7 +76,7 @@
           <div id="facebook-icon">
             <a href="https://facebook.com/void0music" target="_blank">
               <img
-                src="./src/img/social icons/facebook-150px.png"
+                src="./assets/img/social icons/facebook-150px.png"
                 alt="Facebook"
               />
             </a>
@@ -82,7 +84,7 @@
           <div id="youtube-icon">
             <a href="https://youtube.com/@void0music" target="_blank">
               <img
-                src="./src/img/social icons/youtube-150px.png"
+                src="./assets/img/social icons/youtube-150px.png"
                 alt="YouTube"
               />
             </a>
@@ -102,21 +104,10 @@
       </nav>
     </header>
     <div class="side-menu hidden-menu">
-      <ul>
-        CONTENT HERE
-      </ul>
-      <ul>
-        CONTENT HERE
-      </ul>
-      <ul>
-        CONTENT HERE
-      </ul>
-      <ul>
-        CONTENT HERE
-      </ul>
-      <ul>
-        CONTENT HERE
-      </ul>
+      <a href="https://instagram.com/void0music" target="_blank"
+        ><h3>instagram_feed.jpg</h3>
+      </a>
+      <div id="ig-feed-wrapper"></div>
     </div>
     <div class="vid-wrapper">
       <div class="hero-banner-vid" id="player"></div>
