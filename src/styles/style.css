@@ -434,19 +434,83 @@ nav {
 
 /* Side menu IG feed */
 
-#ig-feed-wrapper {
+.ig-feed-wrapper {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  overflow: hidden;
 }
 
-#ig-feed-wrapper img {
-  height: 100px;
-  max-height: 150px;
-  width: 100px;
-  max-width: 150px;
+.ig-post-img {
+  border-radius: 5%;
+  object-fit: cover;
+  height: 125px;
+  min-width: 125px;
+  max-width: 125px;
   overflow: hidden;
-  padding: 3px;
+  margin: 3px;
+  padding: 2px;
+  transform: scale(1);
+  opacity: 1;
+  transition: all 0.8s ease;
+  -webkit-transition: all 0.8s ease;
+}
+
+.ig-post-img:hover {
+  transform: scale(1.05);
+  opacity: 0.75;
+  transition: all 0.8s ease;
+  -webkit-transition: all 0.8s ease;
+}
+
+.icon-overlay {
+  position: relative;
+  border-radius: 5%;
+  object-fit: cover;
+  height: 125px;
+  min-width: 125px;
+  max-width: 125px;
+  overflow: hidden;
+  margin: 2px;
+  padding: 1px;
+  opacity: 0;
+  transition: all 0.8s ease;
+  -webkit-transition: all 0.8s ease;
+}
+
+.icon-overlay:hover {
+  position: relative;
+  opacity: 0.8;
+  transition: all 0.8s ease;
+  -webkit-transition: all 0.8s ease;
+}
+
+.ig-post-container {
+  position: relative;
+}
+
+.overlay-container {
+  position: absolute;
+  border-radius: 5%;
+  object-fit: cover;
+  height: 125px;
+  min-width: 125px;
+  max-width: 125px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 2px;
+  padding: 1px;
+  background-color: rgba(0, 0, 0, 0);
+  transition: all 0.8s ease;
+  -webkit-transition: all 0.8s ease;
+}
+
+.overlay-container:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.8s ease;
 }
 
 /* Sidebar Animation */
@@ -961,20 +1025,18 @@ h2 {
 h3 {
   font-family: "Share-Tech-Mono";
   color: #fafafa;
-  font-size: 28px;
-  margin: 20px;
+  font-size: 30px;
+  margin: 50px 20px 50px 20px;
   text-align: center;
-  transition: all 0.5s ease;
-  -webkit-transition: all 0.5s ease;
+  opacity: 1;
+  transform: scale(1);
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  -webkit-transition: transform 0.5s ease, opacity 0.5s ease;
 }
 
 h3:hover {
-  font-family: "Share-Tech-Mono";
-  color: #fafafa;
-  font-size: 27px;
-  margin: 20px;
-  text-align: center;
   opacity: 0.5;
+  transform: scale(0.97);
   transition: all 0.5s ease;
   -webkit-transition: all 0.5s ease;
 }
