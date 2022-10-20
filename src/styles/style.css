@@ -74,24 +74,17 @@ header {
 }
 
 .side-menu-visible {
-  right: 20% !important;
+  /* right: 20% !important; */
+  right: 20%;
   transition: all 1s ease !important;
   -webkit-transition: all 1s ease !important;
 }
 
 .side-menu-hidden {
-  right: 0% !important;
+  /* right: 0% !important; */
+  right: 0%;
   transition: all 1s ease !important;
   -webkit-transition: all 1s ease !important;
-}
-
-.side-menu {
-  position: fixed;
-  height: 100vh;
-  width: 20%;
-  overflow: hidden;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 50;
 }
 
 .nav-top {
@@ -164,7 +157,7 @@ nav {
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: flex-start;
-  width: 100%;
+  width: 100vw;
   margin-bottom: 100px;
   padding-right: 2%;
 }
@@ -434,6 +427,21 @@ nav {
 
 /* Side menu IG feed */
 
+.side-menu {
+  position: fixed;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: center;
+  align-content: flex-start;
+  width: 20%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 50;
+  overflow: auto;
+}
+
 .ig-feed-wrapper {
   display: flex;
   flex-flow: row wrap;
@@ -441,12 +449,24 @@ nav {
   overflow: hidden;
 }
 
+.ig-post-container {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  align-content: space-around;
+  align-items: flex-start;
+}
+
 .ig-post-img {
+  flex: 1 1 auto;
   border-radius: 5%;
   object-fit: cover;
-  height: 125px;
-  min-width: 125px;
-  max-width: 125px;
+  min-height: 10vh;
+  min-width: 10vh;
+  max-height: 15vh;
+  max-width: 15vh;
+  height: 10vh;
+  width: 10vh;
   overflow: hidden;
   margin: 3px;
   padding: 2px;
@@ -456,52 +476,18 @@ nav {
   -webkit-transition: all 0.8s ease;
 }
 
-.ig-post-img:hover {
-  transform: scale(1.05);
-  opacity: 0.75;
-  transition: all 0.8s ease;
-  -webkit-transition: all 0.8s ease;
-}
-
-.icon-overlay {
-  position: relative;
-  border-radius: 5%;
-  object-fit: cover;
-  height: 125px;
-  min-width: 125px;
-  max-width: 125px;
-  overflow: hidden;
-  margin: 2px;
-  padding: 1px;
-  opacity: 0;
-  transition: all 0.8s ease;
-  -webkit-transition: all 0.8s ease;
-}
-
-.icon-overlay:hover {
-  position: relative;
-  opacity: 0.8;
-  transition: all 0.8s ease;
-  -webkit-transition: all 0.8s ease;
-}
-
-.ig-post-container {
-  position: relative;
-}
-
 .overlay-container {
   position: absolute;
   border-radius: 5%;
   object-fit: cover;
-  height: 125px;
-  min-width: 125px;
-  max-width: 125px;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: 2px;
-  padding: 1px;
+  min-height: 10vh;
+  min-width: 10vh;
+  max-height: 15vh;
+  max-width: 15vh;
+  height: 10vh;
+  width: 10vh;
+  margin: 3px;
+  padding: 2px;
   background-color: rgba(0, 0, 0, 0);
   transition: all 0.8s ease;
   -webkit-transition: all 0.8s ease;
@@ -510,6 +496,31 @@ nav {
 .overlay-container:hover {
   background-color: rgba(0, 0, 0, 0.5);
   transition: all 0.3s ease;
+  -webkit-transition: all 0.8s ease;
+}
+
+.icon-overlay {
+  position: relative;
+  border-radius: 5%;
+  object-fit: cover;
+  min-height: 10vh;
+  min-width: 10vh;
+  max-height: 15vh;
+  max-width: 15vh;
+  height: 10vh;
+  width: 10vh;
+  overflow: hidden;
+  margin: 3px;
+  padding: 2px;
+  opacity: 0;
+  transition: all 0.8s ease;
+  -webkit-transition: all 0.8s ease;
+}
+
+.icon-overlay:hover {
+  transform: scale(1.05);
+  opacity: 0.8;
+  transition: all 0.8s ease;
   -webkit-transition: all 0.8s ease;
 }
 
@@ -1011,13 +1022,15 @@ a {
 h1 {
   margin-top: 1000px;
   font-weight: bold;
-  font-size: 38px;
+  /* font-size: 38px; */
+  font-size: 1.75vw;
   max-width: 900px;
   margin: 30px;
 }
 
 h2 {
-  font-size: 26px;
+  /* font-size: 26px; */
+  font-size: 1.23vw;
   max-width: 900px;
   margin: 30px;
 }
@@ -1025,7 +1038,8 @@ h2 {
 h3 {
   font-family: "Share-Tech-Mono";
   color: #fafafa;
-  font-size: 30px;
+  /* font-size: 30px; */
+  font-size: 1.5vw;
   margin: 50px 20px 50px 20px;
   text-align: center;
   opacity: 1;
@@ -1052,7 +1066,8 @@ p {
   padding: 15px 0px;
   background-color: rgba(0, 0, 0, 0);
   font-family: "Share-Tech-Mono";
-  font-size: 30px;
+  /* font-size: 30px; */
+  font-size: 1.5vw;
   color: #fafafa;
   border: 3px solid #fafafa;
   max-width: 400px;
