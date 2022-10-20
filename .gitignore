@@ -48,3 +48,4 @@ jspm_packages/
 # Custom files to be ignored
 .htaaccess
 secretTokens.js
+settings.json
