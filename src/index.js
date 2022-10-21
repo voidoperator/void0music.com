@@ -79,3 +79,25 @@ ppButton.addEventListener("click", () => {
     player.playVideo();
   }
 });
+
+// Copy contact email to clipboard
+
+const copyBooking = () => {
+  const copyText = "booking@void0music.com";
+  navigator.clipboard.writeText(copyText);
+};
+
+const copyMgmt = () => {
+  const copyText = "mgmt@void0music.com";
+  navigator.clipboard.writeText(copyText);
+};
+
+const copyOperator = () => {
+  const copyText = "operator@void0music.com";
+  navigator.clipboard.writeText(copyText);
+};
+
+const copyPromo = () => {
+  const copyText = "promo@void0music.com";
+  navigator.clipboard.writeText(copyText);
+};

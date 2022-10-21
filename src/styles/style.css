@@ -1241,7 +1241,7 @@ footer {
 .contact-wrapper {
   display: flex;
   flex-flow: column nowrap;
-  width: 20vw;
+  width: 23vw;
 }
 
 .contact-wrapper ul::before {
@@ -1250,6 +1250,41 @@ footer {
 
 .contact-wrapper ul::after {
   content: "//";
+}
+
+.copy-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copy-wrapper button {
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  transform: scale(1);
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+}
+
+.copy-wrapper button:hover {
+  transform: scale(0.85);
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+}
+
+.copy-wrapper img {
+  opacity: 1;
+  width: auto;
+  height: calc(20px + 1vw);
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+}
+
+.copy-wrapper img:hover {
+  opacity: 0.65;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
 }
 
 .follow-me-wrapper {
