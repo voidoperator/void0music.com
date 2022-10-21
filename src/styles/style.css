@@ -165,7 +165,7 @@ nav {
 .logo-container,
 .nav-social-icons {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: space-between;
   align-items: flex-start;
 }
@@ -568,9 +568,8 @@ nav {
 
 body {
   display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: flex-start;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
 main h1,
@@ -582,17 +581,20 @@ main p {
 }
 
 main {
-  margin-top: 100vh;
-  padding-top: 50px;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
+  flex: 1 1 auto;
+}
+
+.main-wrapper {
+  padding-top: 100vh;
 }
 
 /* Slider - Scroll To Content */
 
-.slider-wrap {
+.slider-wrapper {
   position: absolute;
   height: 100vh;
   width: 100%;
@@ -1014,32 +1016,38 @@ main {
 }
 
 /* Text */
+h1,
+h2,
+h3,
+h4,
+p,
+a,
+ul,
+ol {
+  font-family: "Share-Tech-Mono";
+  color: #fafafa;
+}
 
 a {
   text-decoration: none;
 }
 
 h1 {
+  font-size: calc(12px + 1.1vw);
   margin-top: 1000px;
   font-weight: bold;
-  /* font-size: 38px; */
-  font-size: 1.75vw;
   max-width: 900px;
   margin: 30px;
 }
 
 h2 {
-  /* font-size: 26px; */
-  font-size: 1.23vw;
+  font-size: calc(10px + 0.67vw);
   max-width: 900px;
   margin: 30px;
 }
 
 h3 {
-  font-family: "Share-Tech-Mono";
-  color: #fafafa;
-  /* font-size: 30px; */
-  font-size: 1.5vw;
+  font-size: calc(8px + 1vw);
   margin: 50px 20px 50px 20px;
   text-align: center;
   opacity: 1;
@@ -1055,19 +1063,33 @@ h3:hover {
   -webkit-transition: all 0.5s ease;
 }
 
+h4 {
+  font-size: calc(10px + 1vw);
+  margin: 25px 0px 30px 0px;
+}
+
 p {
-  font-size: 14px;
-  max-width: 1000px;
+  font-size: calc(8px + 0.25vw);
+  width: 60vw;
+  min-width: 600px;
   margin: 10px;
+  overflow: hidden;
+  margin-left: calc(15px + 5vw);
+  margin-right: calc(15px + 5vw);
+}
+
+ul {
+  font-size: calc(8px + 0.6vw);
+  text-align: left;
+  line-height: 3vh;
+  letter-spacing: 0.5px;
 }
 
 .learn-more-btn {
   margin: 50px;
   padding: 15px 0px;
   background-color: rgba(0, 0, 0, 0);
-  font-family: "Share-Tech-Mono";
-  /* font-size: 30px; */
-  font-size: 1.5vw;
+  font-size: calc(10px + 1.25vw);
   color: #fafafa;
   border: 3px solid #fafafa;
   max-width: 400px;
@@ -1096,4 +1118,65 @@ button a:hover {
   text-decoration: none;
   transition: all 0.4s 50ms;
   -webkit-transition: all 0.4s ease 50ms;
+}
+
+/* Footer Section */
+
+footer {
+  margin-top: 5 vh;
+  margin-left: calc(15px + 5vw);
+  margin-right: calc(15px + 5vw);
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  align-content: flex-start;
+}
+
+.contact-wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.contact-wrapper ul::before {
+  content: "//";
+}
+
+.contact-wrapper ul::after {
+  content: "//";
+}
+
+.follow-me-wrapper {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.footer-social-icons {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+.footer-social-icons img {
+  background-size: 100%;
+  margin: 10px;
+  height: calc(20px + 1vw);
+  transform: scale(1);
+  opacity: 100%;
+  transition: transform 1s, opacity 1s;
+  -webkit-transition: transform 1s, opacity 1s;
+}
+
+.footer-social-icons img:hover {
+  opacity: 50%;
+  transform: scale(1.15);
+  transition: all 0.5s ease 100ms;
+  -webkit-transition: all 0.5s ease 100ms;
+}
+
+.twitter-feed-wrapper {
+  display: flex;
+  flex-flow: column wrap;
 }
