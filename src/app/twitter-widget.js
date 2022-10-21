@@ -15,9 +15,8 @@ const injectIframe = window.addEventListener("DOMContentLoaded", () => {
   iframeNode.classList.add = "twitter-widget-iframe";
   iframeNode.title = "void(0) Twitter Timeline";
   iframeNode.src = iframeUrl;
-  iframeNode.style.font = `"14px "Courier New" !important;"`;
 
-  // append iframe
+  // append iframe to footer
   const twitterWrapper = document.getElementsByClassName("tweet-wrapper")[0];
   twitterWrapper.appendChild(iframeNode);
 });
