@@ -1,7 +1,7 @@
 // IG Widget Helper functions
 export const fillSideMenu = (feed) => {
   const sideMenu = document.getElementsByClassName("ig-feed-wrapper")[0];
-  for (let i = 0; i < feed.length - 1; i++) {
+  for (let i = 0; i < feed.length - 10; i++) {
     if (feed[i].media_type !== "VIDEO") {
       // Info grabbed from IG API
       let caption = feed[i].caption;
@@ -83,7 +83,7 @@ export const fillMainCarousel = (feed) => {
       // Working...
       overlayContainer.classList.add("overlay-container-car");
       wrapper.classList.add("ig-post-container-car");
-      iconOverlay.src = "./assets/img/social icons/instagram-overlay.png";
+      iconOverlay.src = "./assets/img/social icons/instagram-overlay-xl.png";
       iconOverlay.classList.add("icon-overlay-car");
       newAnchor.href = permalink;
       newAnchor.target = "_blank";
@@ -111,7 +111,7 @@ export const fillMainCarousel = (feed) => {
       // Working...
       overlayContainer.classList.add("overlay-container-car");
       wrapper.classList.add("ig-post-container-car");
-      iconOverlay.src = "./assets/img/social icons/instagram-overlay.png";
+      iconOverlay.src = "./assets/img/social icons/instagram-overlay-xl.png";
       iconOverlay.classList.add("icon-overlay-car");
       newAnchor.href = permalink;
       newAnchor.target = "_blank";

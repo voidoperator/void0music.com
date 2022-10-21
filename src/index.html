@@ -10,9 +10,10 @@
     <link rel="stylesheet" href="./styles/style.css" />
     <script src="./index.js" defer></script>
     <script src="./app/side-menu.js" defer></script>
+    <script src="./app/twitter-widget.js" defer></script>
     <script src="./app/ig-widget.js" type="module" defer></script>
     <script src="./app/ig-widget-helper.js" type="module" defer></script>
-    <title>void(0) &#8211; 𝐂𝐇𝐀𝐏𝐓𝐄𝐑 𝟐: 𝔻𝕌𝔸𝕃𝕀𝕋𝕐</title>
+    <title>void(0) || 𝔻𝕌𝔸𝕃𝕀𝕋𝕐 :: ₴ØØ₦</title>
   </head>
   <body class="side-menu-hidden">
     <header class="side-menu-hidden">
@@ -113,14 +114,14 @@
     </header>
     <div class="side-menu hidden-menu">
       <a href="https://instagram.com/void0music" target="_blank"
-        ><h3>instagram_feed.jpg</h3>
+        ><h3>view_instagram_feed.jpg</h3>
       </a>
       <div class="ig-feed-wrapper"></div>
     </div>
     <div class="vid-wrapper">
       <div class="hero-banner-vid" id="player"></div>
     </div>
-    <div class="controls" title="Play/Pause Video">
+    <div class="play-pause-btn" title="Play/Pause Video">
       <div
         class="vid-control-button active"
         id="control-btn"
@@ -200,18 +201,54 @@
     <footer>
       <div class="contact-wrapper">
         <h4>contact.txt</h4>
-        <ul>
-          booking: booking@void0music.com
-        </ul>
-        <ul>
-          mgmt: mgmt@void0music.com
-        </ul>
-        <ul>
-          contact: operator@void0music.com
-        </ul>
-        <ul>
-          promo: promo@void0music.com
-        </ul>
+        <div class="copy-wrapper">
+          <ul>
+            booking: booking@void0music.com
+          </ul>
+          <a onclick="copy()">
+            <img
+              src="./assets/img/copy-icon.png"
+              alt="copy to clipboard button"
+              title="Copy To Clipboard"
+            />
+          </a>
+        </div>
+        <div class="copy-wrapper">
+          <ul>
+            mgmt: mgmt@void0music.com
+          </ul>
+          <a onclick="copy()">
+            <img
+              src="./assets/img/copy-icon.png"
+              alt="copy to clipboard button"
+              title="Copy To Clipboard"
+            />
+          </a>
+        </div>
+        <div class="copy-wrapper">
+          <ul>
+            contact: operator@void0music.com
+          </ul>
+          <a onclick="copy()">
+            <img
+              src="./assets/img/copy-icon.png"
+              alt="copy to clipboard button"
+              title="Copy To Clipboard"
+            />
+          </a>
+        </div>
+        <div class="copy-wrapper">
+          <ul>
+            promo: promo@void0music.com
+          </ul>
+          <a onclick="copy()">
+            <img
+              src="./assets/img/copy-icon.png"
+              alt="copy to clipboard button"
+              title="Copy To Clipboard"
+            />
+          </a>
+        </div>
       </div>
       <div class="follow-me-wrapper">
         <h4>follow_me.exe</h4>
@@ -289,23 +326,7 @@
       </div>
       <div class="twitter-feed-wrapper">
         <h4>twitter_feed.txt</h4>
-        <div class="tweet-wrapper">
-          <a
-            class="twitter-timeline"
-            data-lang="en"
-            data-width="550"
-            data-height="400"
-            data-dnt="true"
-            data-theme="dark"
-            href="https://twitter.com/void0music?ref_src=twsrc%5Etfw"
-            >Tweets by void0music</a
-          >
-          <script
-            async
-            src="https://platform.twitter.com/widgets.js"
-            charset="utf-8"
-          ></script>
-        </div>
+        <div class="tweet-wrapper"></div>
       </div>
     </footer>
     <div class="site-info">

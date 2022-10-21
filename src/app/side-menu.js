@@ -7,7 +7,7 @@ const popMenu = () => {
   const header = document.getElementsByTagName("header")[0];
   const body = document.getElementsByTagName("body")[0];
   const main = document.getElementsByTagName("main")[0];
-  const controls = document.getElementsByClassName("controls")[0];
+  const controls = document.getElementsByClassName("play-pause-btn")[0];
   const contentArrow = document.getElementsByClassName("scroll-to-main")[0];
   menu.classList.toggle("hidden-menu");
   menu.classList.toggle("visible-menu");

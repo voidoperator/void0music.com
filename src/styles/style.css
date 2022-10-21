@@ -11,7 +11,7 @@
   margin: 0;
   padding: 0;
   box-sizing: content-box;
-  font-family: "Share-Tech-Mono";
+  font-family: "Share-Tech-Mono" !important;
 }
 
 html {
@@ -205,6 +205,8 @@ nav {
 }
 
 #soundcloud-icon img {
+  max-height: 23px;
+  width: auto;
   padding: 5px;
   border-radius: 30%;
   background-color: #ff8800;
@@ -219,6 +221,8 @@ nav {
 }
 
 #spotify-icon img {
+  max-height: 23px;
+  width: auto;
   padding: 5px;
   border-radius: 30%;
   background-color: #1db954;
@@ -233,6 +237,8 @@ nav {
 }
 
 #apple-music-icon img {
+  max-height: 23px;
+  width: auto;
   padding: 5px;
   border-radius: 30%;
   background-color: #f94c57;
@@ -246,6 +252,8 @@ nav {
 }
 
 #twitter-icon img {
+  max-height: 23px;
+  width: auto;
   padding: 5px;
   border-radius: 30%;
   background-color: #1da1f2;
@@ -260,6 +268,8 @@ nav {
 }
 
 #instagram-icon img {
+  max-height: 23px;
+  width: auto;
   padding: 5px;
   border-radius: 30%;
   background-color: #cd486b;
@@ -274,6 +284,8 @@ nav {
 }
 
 #facebook-icon img {
+  max-height: 23px;
+  width: auto;
   padding: 5px;
   border-radius: 30%;
   background-color: #3b5998;
@@ -288,6 +300,8 @@ nav {
 }
 
 #youtube-icon img {
+  max-height: 23px;
+  width: auto;
   padding: 5px;
   border-radius: 30%;
   background-color: #ff0000;
@@ -424,7 +438,7 @@ nav {
   -webkit-transition: transform 0.4s ease-in-out;
 }
 
-/* Side menu IG feed */
+/* Side menu IG feed & Twitter Feed */
 
 .side-menu {
   position: fixed;
@@ -436,7 +450,7 @@ nav {
   width: 20%;
   height: 100vh;
   overflow: hidden;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.9);
   z-index: 50;
   overflow: auto;
 }
@@ -775,7 +789,7 @@ main {
   animation: pulsate 1.5s ease-out infinite;
 }
 
-.controls {
+.play-pause-btn {
   display: flex;
   position: absolute;
   right: 5%;
@@ -1217,16 +1231,17 @@ footer {
   margin-left: calc(15px + 5vw);
   margin-right: calc(15px + 5vw);
   margin-bottom: 5vh;
+  overflow: hidden;
   display: flex;
   flex-flow: row wrap;
   align-items: flex-start;
   justify-content: space-evenly;
-  align-content: flex-start;
 }
 
 .contact-wrapper {
   display: flex;
   flex-flow: column nowrap;
+  width: 20vw;
 }
 
 .contact-wrapper ul::before {
@@ -1239,7 +1254,8 @@ footer {
 
 .follow-me-wrapper {
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column nowrap;
+  width: 15vw;
 }
 
 .footer-social-icons {
@@ -1270,7 +1286,16 @@ footer {
 
 .twitter-feed-wrapper {
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column nowrap;
+  width: calc(375px + 10vw);
+  height: 40vh;
+}
+
+#twitter-widget-footer {
+  display: flex;
+  flex-grow: 1;
+  height: 40vh;
+  width: calc(350px + 10vw);
 }
 
 /* Site Info */
