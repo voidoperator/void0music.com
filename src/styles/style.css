@@ -165,9 +165,7 @@ nav {
 .logo-container,
 .nav-social-icons {
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  align-items: flex-start;
+  flex-flow: row nowrap;
 }
 
 #header-logo {
@@ -590,6 +588,97 @@ main {
 
 .main-wrapper {
   padding-top: 100vh;
+}
+
+/* Main IG Carousel */
+
+.main-ig-carousel {
+  width: 100vw;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+}
+
+.main-carousel-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  overflow: hidden;
+  width: 100vw;
+}
+
+.ig-post-container-car {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  align-content: space-around;
+  align-items: flex-start;
+}
+
+.ig-post-img-car {
+  flex: 1 1 auto;
+  border-radius: 5%;
+  object-fit: cover;
+  min-height: 13vh;
+  min-width: 13vh;
+  max-height: 17vh;
+  max-width: 17vh;
+  height: 15vh;
+  width: 15vh;
+  overflow: hidden;
+  margin: 3px;
+  padding: 2px;
+  transform: scale(1);
+  opacity: 1;
+  transition: all 0.8s ease;
+  -webkit-transition: all 0.8s ease;
+}
+
+.overlay-container-car {
+  position: absolute;
+  border-radius: 5%;
+  object-fit: cover;
+  min-height: 13vh;
+  min-width: 13vh;
+  max-height: 17vh;
+  max-width: 17vh;
+  height: 15vh;
+  width: 15vh;
+  margin: 3px;
+  padding: 2px;
+  background-color: rgba(0, 0, 0, 0);
+  transition: all 0.8s ease;
+  -webkit-transition: all 0.8s ease;
+}
+
+.overlay-container-car:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.8s ease;
+}
+
+.icon-overlay-car {
+  position: relative;
+  border-radius: 5%;
+  object-fit: cover;
+  min-height: 13vh;
+  min-width: 13vh;
+  max-height: 17vh;
+  max-width: 17vh;
+  height: 15vh;
+  width: 15vh;
+  overflow: hidden;
+  margin: 3px;
+  padding: 2px;
+  opacity: 0;
+  transition: all 0.8s ease;
+  -webkit-transition: all 0.8s ease;
+}
+
+.icon-overlay-car:hover {
+  transform: scale(1.05);
+  opacity: 0.8;
+  transition: all 0.8s ease;
+  -webkit-transition: all 0.8s ease;
 }
 
 /* Slider - Scroll To Content */
@@ -1020,12 +1109,14 @@ h1,
 h2,
 h3,
 h4,
+h5,
 p,
 a,
 ul,
 ol {
   font-family: "Share-Tech-Mono";
   color: #fafafa;
+  font-weight: normal;
 }
 
 a {
@@ -1038,6 +1129,7 @@ h1 {
   font-weight: bold;
   max-width: 900px;
   margin: 30px;
+  font-weight: bolder;
 }
 
 h2 {
@@ -1080,7 +1172,6 @@ p {
 
 ul {
   font-size: calc(8px + 0.6vw);
-  text-align: left;
   line-height: 3vh;
   letter-spacing: 0.5px;
 }
@@ -1126,6 +1217,7 @@ footer {
   margin-top: 5 vh;
   margin-left: calc(15px + 5vw);
   margin-right: calc(15px + 5vw);
+  margin-bottom: 5vh;
   display: flex;
   flex-flow: row wrap;
   align-items: flex-start;
@@ -1160,9 +1252,10 @@ footer {
 }
 
 .footer-social-icons img {
+  flex: 1 1 auto;
   background-size: 100%;
   margin: 10px;
-  height: calc(20px + 1vw);
+  height: calc(10px + 1vw);
   transform: scale(1);
   opacity: 100%;
   transition: transform 1s, opacity 1s;
@@ -1179,4 +1272,19 @@ footer {
 .twitter-feed-wrapper {
   display: flex;
   flex-flow: column wrap;
+}
+
+/* Site Info */
+
+.site-info {
+  display: flex;
+  align-self: center;
+  border-top: 1px solid #3e3e3e;
+  width: 80vw;
+}
+
+h5 {
+  margin: 30px;
+  color: #3e3e3e;
+  font-size: calc(6px + 0.5vw);
 }
