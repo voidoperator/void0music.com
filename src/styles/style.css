@@ -11,6 +11,7 @@
   margin: 0;
   padding: 0;
   box-sizing: content-box;
+  font-family: "Share-Tech-Mono";
 }
 
 html {
@@ -593,7 +594,6 @@ main {
 /* Main IG Carousel */
 
 .main-ig-carousel {
-  width: 100vw;
   margin-top: 3vh;
   margin-bottom: 3vh;
 }
@@ -603,7 +603,6 @@ main {
   flex-flow: row nowrap;
   justify-content: flex-start;
   overflow: hidden;
-  width: 100vw;
 }
 
 .ig-post-container-car {

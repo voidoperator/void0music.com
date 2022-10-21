@@ -38,7 +38,8 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.7.0",
-    "core-js": "3"
+    "core-js": "3",
+    "oauth-1.0a": "^2.2.6"
   },
   "browserslist": [
     "> 1%",
