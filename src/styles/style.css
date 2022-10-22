@@ -686,8 +686,13 @@ main {
 /* Main IG Carousel */
 
 .main-ig-carousel {
+  display: flex;
+  position: relative;
   margin-top: 3vh;
   margin-bottom: 3vh;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
 }
 
 .main-carousel-wrapper {
@@ -812,6 +817,52 @@ main {
   opacity: 0.3;
   transition: opacity 1s ease;
   -webkit-transition: opacity 1s ease;
+}
+
+.view-on-ig {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  font-size: 18px;
+  text-align: center;
+  height: 2.5vh;
+  width: 21.5vh;
+  border-radius: 8px;
+  background-color: rgb(25, 25, 25);
+  box-shadow: 1px 7px 54px 2px rgba(0, 0, 0, 0.65);
+  -webkit-box-shadow: 1px 7px 54px 2px rgba(0, 0, 0, 0.65);
+  -moz-box-shadow: 1px 7px 54px 2px rgba(0, 0, 0, 0.65);
+  transform: scale(1);
+  transition: transform 0.8s ease;
+  -webkit-transition: transform 0.8s ease;
+}
+
+.view-on-ig:hover {
+  transform: scale(1.05);
+  transition: transform 0.8s ease;
+  -webkit-transition: transform 0.8s ease;
+}
+
+.view-on-ig a {
+  color: #fafafa;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  font-weight: 500 !important;
+  line-height: 1.75em;
+}
+
+.section-footer .zoom-instagram-widget a.ig-b-v-24 {
+  color: #fff !important;
+  border: none;
+
+  font-size: 12px;
+  text-transform: uppercase;
+  background: #101010;
+  display: inline-block;
+  margin: 0;
+  letter-spacing: 2px !important;
 }
 
 /* Slider - Scroll To Content - Play/Pause Button */
