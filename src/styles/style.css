@@ -22,6 +22,10 @@
   #youtube-icon {
     display: none;
   }
+  #header-logo {
+    height: auto !important;
+    width: 35vw !important;
+  }
 }
 
 @media only screen and (max-width: 940px) {
@@ -124,29 +128,28 @@ html {
 header {
   position: fixed;
   display: flex;
-  width: 100%;
 }
 
 .hidden-menu {
-  right: -20%;
+  right: -20% !important;
   transition: all 1s ease;
   -webkit-transition: all 1s ease;
 }
 
 .visible-menu {
-  right: 0%;
+  right: 0% !important;
   transition: all 1s ease;
   -webkit-transition: all 1s ease;
 }
 
 .side-menu-visible {
-  right: 20%;
+  right: 20% !important;
   transition: all 1s ease !important;
   -webkit-transition: all 1s ease !important;
 }
 
 .side-menu-hidden {
-  right: 0%;
+  right: 0% !important;
   transition: all 1s ease !important;
   -webkit-transition: all 1s ease !important;
 }
@@ -383,6 +386,7 @@ nav {
 
 .menu-btn-container {
   display: flex;
+  margin-right: 10px;
 }
 
 .menu-btn-container .checkbox {
@@ -1293,7 +1297,7 @@ h4 {
 p {
   font-size: calc(8px + 0.25vw);
   width: 60vw;
-  min-width: 600px;
+  /* min-width: 600px; */
   margin: 10px;
   overflow: hidden;
   margin-left: calc(15px + 5vw);
