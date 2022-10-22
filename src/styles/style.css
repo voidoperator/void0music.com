@@ -1,5 +1,13 @@
 /* Media Queries*/
 
+@media only screen and (max-width: 760px) {
+  #player {
+    height: 100% !important;
+    width: 400% !important;
+    left: -150% !important;
+  }
+}
+
 @media only screen and (max-width: 750px) {
   #soundcloud-icon {
     display: none;
@@ -255,7 +263,7 @@ nav {
 }
 
 .nav-social-icons img {
-  background-size: 100% 100%;
+  background-size: 100%;
   height: 23px;
   margin: 20px 15px auto 15px;
   transform: scale(1);
@@ -316,6 +324,7 @@ nav {
   filter: brightness(0) saturate(100%) invert(38%) sepia(34%) saturate(2713%)
     hue-rotate(326deg) brightness(102%) contrast(95%);
   transition: all 0.25s ease 50ms;
+  -webkit-transition: all 0.25s ease 50ms;
 }
 
 #twitter-icon img {
@@ -667,8 +676,6 @@ main p {
 main {
   display: flex;
   flex-flow: column nowrap;
-  /* justify-content: center;
-  align-items: center; */
   flex: 1 1 auto;
 }
 
@@ -807,7 +814,7 @@ main {
   -webkit-transition: opacity 1s ease;
 }
 
-/* Slider - Scroll To Content */
+/* Slider - Scroll To Content - Play/Pause Button */
 
 .slider-wrapper {
   position: absolute;
@@ -1297,7 +1304,6 @@ h4 {
 p {
   font-size: calc(8px + 0.25vw);
   width: 60vw;
-  /* min-width: 600px; */
   margin: 10px;
   overflow: hidden;
   margin-left: calc(15px + 5vw);
