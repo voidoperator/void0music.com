@@ -18,7 +18,7 @@ export const fillSideMenu = (feed) => {
       // Working...
       overlayContainer.classList.add("overlay-container");
       wrapper.classList.add("ig-post-container");
-      iconOverlay.src = "./assets/img/social icons/instagram-overlay.png";
+      iconOverlay.src = "../assets/img/social icons/instagram-overlay.png";
       iconOverlay.classList.add("icon-overlay");
       iconOverlay.alt = "View this post on Instagram icon";
       newAnchor.href = permalink;
@@ -49,7 +49,7 @@ export const fillSideMenu = (feed) => {
       // Working...
       overlayContainer.classList.add("overlay-container");
       wrapper.classList.add("ig-post-container");
-      iconOverlay.src = "./assets/img/social icons/instagram-overlay.png";
+      iconOverlay.src = "../assets/img/social icons/instagram-overlay.png";
       iconOverlay.classList.add("icon-overlay");
       iconOverlay.alt = "View this post on Instagram icon";
       newAnchor.href = permalink;
@@ -89,7 +89,7 @@ export const fillMainCarousel = (feed) => {
       // Working...
       overlayContainer.classList.add("overlay-container-car");
       wrapper.classList.add("ig-post-container-car");
-      iconOverlay.src = "./assets/img/social icons/instagram-overlay-xl.png";
+      iconOverlay.src = "../assets/img/social icons/instagram-overlay-xl.png";
       iconOverlay.classList.add("icon-overlay-car");
       iconOverlay.alt = "View this post on Instagram icon";
       newAnchor.href = permalink;
@@ -120,7 +120,7 @@ export const fillMainCarousel = (feed) => {
       // Working...
       overlayContainer.classList.add("overlay-container-car");
       wrapper.classList.add("ig-post-container-car");
-      iconOverlay.src = "./assets/img/social icons/instagram-overlay-xl.png";
+      iconOverlay.src = "../assets/img/social icons/instagram-overlay-xl.png";
       iconOverlay.classList.add("icon-overlay-car");
       iconOverlay.alt = "View this post on Instagram icon";
       newAnchor.href = permalink;

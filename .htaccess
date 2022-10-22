@@ -1,3 +1,5 @@
+DirectoryIndex src/index.html
+
 # BEGIN Really Simple SSL Redirect 5.3.1
 <IfModule mod_rewrite.c>
 RewriteEngine on
