@@ -1,12 +1,12 @@
 // IG API Widget
-import { token, testToken, userId, userName } from "./secretTokens.js";
-import { fillSideMenu, fillMainCarousel } from "./ig-widget-helper.js";
+import { token, testToken, userId, userName } from './secretTokens.js';
+import { fillSideMenu, fillMainCarousel } from './igWidgetHelper.js';
 
-const baseUrl = "https://graph.instagram.com";
+const baseUrl = 'https://graph.instagram.com';
 const feedEndpoint =
-  "media?fields=id,media_type,media_url,thumbnail_url,permalink,caption&access_token=";
+  'media?fields=id,media_type,media_url,thumbnail_url,permalink,caption&access_token=';
 
-export const feed = window.addEventListener("DOMContentLoaded", () => {
+export const feed = window.addEventListener('DOMContentLoaded', () => {
   const urlToFetch = `${baseUrl}/${userId}/${feedEndpoint}${testToken}`;
   const feedGrab = async () => {
     try {

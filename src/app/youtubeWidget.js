@@ -29,22 +29,19 @@ function onYouTubeIframeAPIReady() {
 }
 
 function onPlayerReady(event) {
+  event.target.setVolume(0);
   event.target.playVideo();
 }
 
 let done = false;
 function onPlayerStateChange(event) {
-  if (event.data == YT.PlayerState.PLAYING && !done) {
+  if (event.data === YT.PlayerState.PLAYING && !done) {
     setTimeout(stopVideo, 400000);
     done = true;
   }
 }
 function stopVideo() {
   player.stopVideo();
-}
-function onPlayerReady(event) {
-  event.target.setVolume(0);
-  event.target.playVideo();
 }
 
 // Play/Pause video with button
