@@ -12,7 +12,7 @@
 
 @font-face {
   font-family: "Share-Tech-Mono";
-  src: url("../assets/font/Share-Tech-Mono.otf");
+  src: url('./Share-Tech-Mono.otf');
 }
 
 /* Universal */

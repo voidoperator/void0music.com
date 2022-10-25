@@ -49,3 +49,4 @@ jspm_packages/
 .htaaccess
 secretTokens.js
 settings.json
+/dist

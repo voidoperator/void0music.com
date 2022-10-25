@@ -1,17 +1,17 @@
 // Autoplay iFrame Hero Banner
 
-const tag = document.createElement("script");
+const tag = document.createElement('script');
 
-tag.src = "https://www.youtube.com/iframe_api";
-const firstScriptTag = document.getElementsByTagName("script")[0];
+tag.src = 'https://www.youtube.com/iframe_api';
+const firstScriptTag = document.getElementsByTagName('script')[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
 let player;
 function onYouTubeIframeAPIReady() {
-  player = new YT.Player("player", {
-    videoId: "sRlyruPl64Q",
+  player = new YT.Player('player', {
+    videoId: 'sRlyruPl64Q',
     playerVars: {
-      playlist: "sRlyruPl64Q",
+      playlist: 'sRlyruPl64Q',
       loop: 1,
       autoplay: 1,
       controls: 0,
@@ -43,17 +43,3 @@ function onPlayerStateChange(event) {
 function stopVideo() {
   player.stopVideo();
 }
-
-// Play/Pause video with button
-
-const ppButton = document.getElementById("control-btn");
-
-ppButton.addEventListener("click", () => {
-  const playerState = player.getPlayerState();
-  if (playerState === 1) {
-    player.pauseVideo();
-  }
-  if (playerState !== 1) {
-    player.playVideo();
-  }
-});

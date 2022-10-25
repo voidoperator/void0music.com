@@ -1,4 +1,4 @@
-DirectoryIndex src/index.html
+DirectoryIndex src/index.html src/linktree.html
 
 # BEGIN Really Simple SSL Redirect 5.3.1
 <IfModule mod_rewrite.c>
