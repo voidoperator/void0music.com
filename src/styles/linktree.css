@@ -6,6 +6,22 @@
     width: 400% !important;
     left: -150% !important;
   }
+  body {
+    overflow: hidden !important;
+    height: 100vh !important;
+  }
+  nav {
+    margin-top: 5vh !important;
+  }
+  .nav-social-icons {
+    margin-bottom: 3.5vh !important;
+  }
+  .play-pause-btn {
+    right: 0 !important;
+    top: 6.5vh !important;
+    bottom: 100% !important;
+    z-index: 1;
+}
 }
 
 /* Fonts */
@@ -36,7 +52,7 @@ html {
 .vid-wrapper {
   display: block;
   position: absolute;
-  width: 200%;
+  width: 100%;
   height: 100%;
   top: 0;
   left: 0;
@@ -56,7 +72,7 @@ html {
   z-index: -100;
 }
 
-.hero-banner-vid iframe {
+.hero-banner-vid video {
   display: block;
   position: absolute;
   top: 0;
@@ -333,7 +349,7 @@ main {
 }
 
 .highlighted-button {
-  margin-bottom: 3vh;
+  margin-bottom: 5vh;
   display: flex;
   align-items: center;
   justify-items: center;
@@ -341,7 +357,7 @@ main {
   font-size: 18px;
   text-align: center;
   text-transform: uppercase;
-  height: 50px;
+  height: 5vh;
   width: 70vw;
   background-image: radial-gradient(at center left, #ff0000 52%, #b92929 100%);
   border-radius: 25px;
@@ -353,13 +369,13 @@ main {
 }
 
 .individual-buttons {
-  margin-bottom: 3vh;
+  margin-bottom: 5vh;
   display: flex;
   position: relative;
   font-size: 18px;
   text-align: center;
   text-transform: uppercase;
-  height: 50px;
+  height: 5vh;
   width: 70vw;
   background-image: radial-gradient(at center left, #e1e1e1 52%, #9e9e9e 100%);
   border-radius: 25px;

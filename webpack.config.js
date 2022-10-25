@@ -9,7 +9,7 @@ module.exports = {
   mode: 'production',
   entry: {
     index: path.resolve(__dirname, 'src/app/index.js'),
-    // index: path.resolve(__dirname, 'src/app/linktree.js'),
+    // linktree: path.resolve(__dirname, 'src/app/linktree.js'),
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
